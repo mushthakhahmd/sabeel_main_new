@@ -371,84 +371,233 @@ Future<void> insertIntoTable() async {
     await txn.rawInsert(
         'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
             '(100,12, "Nikah Khutuba", "", "false", "assets/pdf/12 Nikah Khutuba.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(101,12, "Niyyah While Teaching And Studying", "نية التعلم والتعليم", "false", "assets/pdf/12 Niyyah to Recite While Teaching.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(102,12, "Prophetic Dua for Healing", "عند عيادة المريض", "false", "assets/pdf/12 Prophetic Dua for Healing.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(103,12, "Some Ayahs to Cure Illness", "آيات الشفاء", "false", "assets/pdf/12 Some Ayahs to Cure Illness.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(104,12, "Sujood-u-Thilawath", "سجود التلاوة", "false", "assets/pdf/12 Sujood-u-Thilawath.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(105,12, "Tasbíh Prayer", "صلاة التسبيح", "false", "assets/pdf/12 Tasbih Prayer.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(106,12, "Tawba Prayer", "صلاة التوبة", "false", "assets/pdf/12 Tawba Prayer.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(107,12, "Things to Do When a New Baby is Born", "ما يعمل للولد الجديد", "false", "assets/pdf/12 Things to Do When a New Baby is Born.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(108,12, "To Become Childbirth Easier", "لسهولة وضع الحمل", "false", "assets/pdf/12 To Become Childbirth Easier.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(109,12, "To Chant in Sujood-u-Shukr", "سجود الشكر", "false", "assets/pdf/12 To Chant in Sujood-u-Shukr.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(110,12, "When Starting to Live in a New Home", "ما يقرأ في المنزل الجديد", "false", "assets/pdf/12 To Chant When Starting to Live in a New Home.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(111,12, "To Get Included among Good People", "", "false", "assets/pdf/12 To Get Included among Good People (At Fajr).pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(112,12, "To One Who Wears New Dress", "لـمن لبس الثوب الجديد", "false", "assets/pdf/12 To One Who Wears New Dress.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(113,12, "To See What you wished for Your Family", "لرؤية ما رجوناه في الزوجة والأولاد", "false", "assets/pdf/12 To see what you wished for Your Family.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(114,12, "When Combing Beard", "عند تمشيط اللحية", "false", "assets/pdf/12 When Combing Beard.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(115,12, "When Entering into Bathroom", "عند الدخول إلى المستحم", "false", "assets/pdf/12 When Entering into Bathroom.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(116,12, "When Entering into Home", "عند دخول المنزل", "false", "assets/pdf/12 When Entering into Home.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(117,12, "When Entering Masjid", "عند الدخول إلى المسجد", "false", "assets/pdf/12 When Entering Masjid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(118,12, "When Entering To an Unoccupied Place", "عند الدخول إلى المكان الخالي", "false", "assets/pdf/12 When Entering To an Unoccupied Place.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(119,12, "When Facing Diffuculty with Vomiting", "إذا ضاقت الحامل بالقيء", "false", "assets/pdf/12 When Facing Diffuculty with Vomiting.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(120,12, "When Finishing from Azaan", "عند الفراغ من الأذان", "false", "assets/pdf/12 When Finishing from Azaan.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(121,12, "When Getting angry", "عند الغضب", "false", "assets/pdf/12 When Getting angry.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(122,12, "When Going to Masjid", "", "false", "assets/pdf/12 When Going to Masjid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(123,12, "When Hearing Azaan", "جواب الأذان", "false", "assets/pdf/12 When Hearing Azaan.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(124,12, "When It Rains", "عند المطر", "false", "assets/pdf/12 When It Rains.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(125,12, "When Leaving Home", "عند الخروج من المنزل", "false", "assets/pdf/12 When Leaving Home.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+    '(126,12, "When Looking at the Sky", "عند النظر إلى السماء", "false", "assets/pdf/12 When Looking at the Sky.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(127,12, "When Looking into a Mirror", "عند النظر إلى المرآة", "false", "assets/pdf/12 When Looking into a Mirror.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(128,12, "When Returning from Masjid", "عند الخروج من المسجد", "false", "assets/pdf/12 When Returning from Masjid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(129,12, "When Returning from Toilet", "عند الخروج من الخلاء", "false", "assets/pdf/12 When Returning from Toilet.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(130,12, "When Sighting the New Moon", "عند رؤية الهلال", "false", "assets/pdf/12 When Sighting the New Moon.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(131,12, "When Undressing", "عند نزع الثوب", "false", "assets/pdf/12 When Undressing.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(132,12, "When Using Perfume", "عند شمّ العطر", "false", "assets/pdf/12 When Using Perfume.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(133,12, "When Visiting a Patient", "عند عيادة المريض", "false", "assets/pdf/12 When Visiting a Patient.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(134,12, "When Wearing Dress", "عند لبس الثوب", "false", "assets/pdf/12 When Wearing Dress.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(135,12, "While Donating", "عند التصدق", "false", "assets/pdf/12 While Donating.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(136,12, "While Drinking Milk", "عند شرب اللبن", "false", "assets/pdf/12 While Drinking Milk.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(137,12, "While Drinking Zamzam Water", "عند شرب ماء زمزم", "false", "assets/pdf/12 While Drinking Zamzam Water.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(138,12, "While Entering Toilet", "عند دخول الخلاء", "false", "assets/pdf/12 While Entering Toilet.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(139,12, "While Facing Difficulties", "عند الكرب", "false", "assets/pdf/12 While Facing Difficulties.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(140,12, "While paying off the debt", "", "false", "assets/pdf/12 While paying off the debt.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(141,12, "While Shaking Hands with Each other", "عند المصافحة", "false", "assets/pdf/12 While Shaking Hands.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(142,12, "While Thundering", "عند الرعد", "false", "assets/pdf/12 While Thundering.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(143,12, "While Yawning", "عند التثاؤب", "false", "assets/pdf/12 While Yawning.pdf")');
+
+
+
+
     // await txn.rawInsert(
     //     'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
     // );
-            // '(101,12, "Niyyah While Teaching And Studying", "نية التعلم والتعليم", "false", "assets/pdf/12 Niyyah to Recite While Teaching.pdf")'
-            // '(102,12, "Prophetic Dua for Healing", "عند عيادة المريض", "false", "assets/pdf/12 Prophetic Dua for Healing.pdf")'
-            // '(103,12, "Some Ayahs to Cure Illness", "آيات الشفاء", "false", "assets/pdf/12 Some Ayahs to Cure Illness.pdf")'
-            // '(104,12, "Sujood-u-Thilawath", "سجود التلاوة", "false", "assets/pdf/12 Sujood-u-Thilawath.pdf")'
-            // '(105,12, "Tasbíh Prayer", "صلاة التسبيح", "false", "assets/pdf/12 Tasbih Prayer.pdf")'
-            // '(106,12, "Tawba Prayer", "صلاة التوبة", "false", "assets/pdf/12 Tawba Prayer.pdf")'
-            // '(107,12, "Things to Do When a New Baby is Born", "ما يعمل للولد الجديد", "false", "assets/pdf/12 Things to Do When a New Baby is Born.pdf")'
-            // '(108,12, "To Become Childbirth Easier", "لسهولة وضع الحمل", "false", "assets/pdf/12 To Become Childbirth Easier.pdf")'
-            // '(109,12, "To Chant in Sujood-u-Shukr", "سجود الشكر", "false", "assets/pdf/12 To Chant in Sujood-u-Shukr.pdf")'
-            // '(110,12, "When Starting to Live in a New Home", "ما يقرأ في المنزل الجديد", "false", "assets/pdf/12 To Chant When Starting to Live in a New Home.pdf")'
-            // '(111,12, "To Get Included among Good People", "", "false", "assets/pdf/12 To Get Included among Good People (At Fajr).pdf")'
-            // '(112,12, "To One Who Wears New Dress", "لـمن لبس الثوب الجديد", "false", "assets/pdf/12 To One Who Wears New Dress.pdf")'
-            // '(113,12, "To See What you wished for Your Family", "لرؤية ما رجوناه في الزوجة والأولاد", "false", "assets/pdf/12 To see what you wished for Your Family.pdf")'
-            // '(114,12, "When Combing Beard", "عند تمشيط اللحية", "false", "assets/pdf/12 When Combing Beard.pdf")'
-            // '(115,12, "When Entering into Bathroom", "عند الدخول إلى المستحم", "false", "assets/pdf/12 When Entering into Bathroom.pdf")'
-            // '(116,12, "When Entering into Home", "عند دخول المنزل", "false", "assets/pdf/12 When Entering into Home.pdf")'
-            // '(117,12, "When Entering Masjid", "عند الدخول إلى المسجد", "false", "assets/pdf/12 When Entering Masjid.pdf")'
-            // '(118,12, "When Entering To an Unoccupied Place", "عند الدخول إلى المكان الخالي", "false", "assets/pdf/12 When Entering To an Unoccupied Place.pdf")'
-            // '(119,12, "When Facing Diffuculty with Vomiting", "إذا ضاقت الحامل بالقيء", "false", "assets/pdf/12 When Facing Diffuculty with Vomiting.pdf")'
-            // '(120,12, "When Finishing from Azaan", "عند الفراغ من الأذان", "false", "assets/pdf/12 When Finishing from Azaan.pdf")'
-            // '(121,12, "When Getting angry", "عند الغضب", "false", "assets/pdf/12 When Getting angry.pdf")'
-            // '(122,12, "When Going to Masjid", "", "false", "assets/pdf/12 When Going to Masjid.pdf")'
-            // '(123,12, "When Hearing Azaan", "جواب الأذان", "false", "assets/pdf/12 When Hearing Azaan.pdf")'
-            // '(124,12, "When It Rains", "عند المطر", "false", "assets/pdf/12 When It Rains.pdf")'
-            // '(125,12, "When Leaving Home", "عند الخروج من المنزل", "false", "assets/pdf/12 When Leaving Home.pdf")'
-            // '(126,12, "When Looking at the Sky", "عند النظر إلى السماء", "false", "assets/pdf/12 When Looking at the Sky.pdf")'
-            // '(127,12, "When Looking into a Mirror", "عند النظر إلى المرآة", "false", "assets/pdf/12 When Looking into a Mirror.pdf")'
-            // '(128,12, "When Returning from Masjid", "عند الخروج من المسجد", "false", "assets/pdf/12 When Returning from Masjid.pdf")'
-            // '(129,12, "When Returning from Toilet", "عند الخروج من الخلاء", "false", "assets/pdf/12 When Returning from Toilet.pdf")'
-            // '(130,12, "When Sighting the New Moon", "عند رؤية الهلال", "false", "assets/pdf/12 When Sighting the New Moon.pdf")'
-            // '(131,12, "When Undressing", "عند نزع الثوب", "false", "assets/pdf/12 When Undressing.pdf")'
-            // '(132,12, "When Using Perfume", "عند شمّ العطر", "false", "assets/pdf/12 When Using Perfume.pdf")'
-            // '(133,12, "When Visiting a Patient", "عند عيادة المريض", "false", "assets/pdf/12 When Visiting a Patient.pdf")'
-            // '(134,12, "When Wearing Dress", "عند لبس الثوب", "false", "assets/pdf/12 When Wearing Dress.pdf")'
-            // '(135,12, "While Donating", "عند التصدق", "false", "assets/pdf/12 While Donating.pdf")'
-            // '(136,12, "While Drinking Milk", "عند شرب اللبن", "false", "assets/pdf/12 While Drinking Milk.pdf")'
-            // '(137,12, "While Drinking Zamzam Water", "عند شرب ماء زمزم", "false", "assets/pdf/12 While Drinking Zamzam Water.pdf")'
-            // '(138,12, "While Entering Toilet", "عند دخول الخلاء", "false", "assets/pdf/12 While Entering Toilet.pdf")'
-            // '(139,12, "While Facing Difficulties", "عند الكرب", "false", "assets/pdf/12 While Facing Difficulties.pdf")'
-            // '(140,12, "While paying off the debt", "", "false", "assets/pdf/12 While paying off the debt.pdf")'
-            // '(141,12, "While Shaking Hands with Each other", "عند المصافحة", "false", "assets/pdf/12 While Shaking Hands.pdf")'
-            // '(142,12, "While Thundering", "عند الرعد", "false", "assets/pdf/12 While Thundering.pdf")'
-            // '(143,12, "While Yawning", "عند التثاؤب", "false", "assets/pdf/12 While Yawning.pdf")'
 
 
 
-            // '(1,14, "Salam Baith", "قصيدة السّلام عليك", "false", "14 sharrafal anam moulid.pdf")'
-            // '(1,14, "Sharrafal Anam Moulid", "مولد شرف الأنام", "false", "04 Luha prayer.pdf")'
-            // '(1,14, "Manqoos Moulid", "المولد المنقوص", "false", "14 Manqoos Moulid.pdf")'
-            // '(1,14, "Barzanji Moulid", "مولد البرزنجي", "false", "14 Barzanji Moulid.pdf")'
-            // '(1,14, "Badr Moulid", "مولد بدر", "false", "14 Badr Moulid.pdf")'
-            // '(1,14, "Amladul Gusnain moulid", "مولد أملد الغصنين مختصر مولد الحسنين", "false", "14 Amladul Gusnain moulid.pdf")'
-            // '(1,14, "Muhyidheen Moulid", "مولد محي الدين", "false", "14 Muhyidheen Moulid.pdf")'
-            //
-            //
-            // '(1,15, "Qaseedat-ul Burda", "قصيدة البردة", "false", "15 Qaseedat-ul Burda of Imam Busweeri.pdf")'
-            // '(2,15, "Qaseedat-ul Mulariyya", "القصيدة المضرية", "false", "15 Qaseedat-ul Mulariyya of Imam Busweeri.pdf")'
-            // '(3,15, "Qaseedath-ul Muhammadiyya", "القصيدة المحمدية", "false", "15 Qaseedath-ul Muhammadiyya.pdf")'
-            // '(4,15, "Qaseedat-ul Witriyya", "قصائد الوترية", "false", "15 Qaseedat-ul Witriyya.pdf")'
-            // '(5,15, "Qaseeda Swallal Ilah", "قصيدة صلى الإله", "false", "15 Qaseeda Swallal Ilah of Sheikh.pdf")'
-            // '(6,15, "Qaseeda Ahmadullahil Wali", "قصيدة  أحمد الله الولي", "false", "15 Qaseeda Ahmadullahil Wali.pdf")'
-            // '(7,15, "Qaseeda Written on The Wall of Raula", "القصيدة المكتوبة في جدران الروضة", "false", "15 Qaseeda Written on The Wall.pdf")'
-            // '(8,15, "Sayyidatuna Khadeeja Tawassul", "التوسل بسيدتنا خديجة الكبرى", "false", "15 Sayyidatuna Khadeeja Tawassul.pdf")'
-            // '(9,15, "Sayyidatuna Fatima Tawassul", "التوسل بسيدتنا فاطمة الزهراء", "false", "15 Sayyidatuna Fatima Tawassul.pdf")'
-            // '(10,15, "Sayyidatuna Mariyam Tawassul", "التوسل بسيدتنا مريم", "false", "15 Sayyidatuna Mariyam Tawassul.pdf")'
-            // '(11,15, "Al-Qutbiyya", "القطبية للشيخ صدقة الله القاهري", "false", "15 Al-Qutbiyya.pdf")'
-            // '(12,15, "Al-Mahlaratul Badriyya", "المحضرة البدرية", "false", "15 Al-Mahlaratul Badriyya.pdf")'
-            // '(13,15, "Tha’ajeelul futhooh", "تعجيل الفتوح", "false", "15 Thaajeelul futhooh.pdf")'
-            // '(14,15, "Majlisunnoor", "مجلس النور", "false", "15 Majlisunnoor.pdf")'
-            // '(15,15, "Al-Qaseedatul Qamriyya", "القصيدة الخمرية", "false", "15 Al-Qaseedatul khamriyya.pdf")'
-            // '(16,15, "Qaseeda of Sheikh Jifri Calicut", "قصيدة دفع البلاء للشيخ الجفري الكالكوتي", "false", "15 Qaseeda of Sheikh Jifri Calicut.pdf")'
-            // '(17,15, "Qaseeda Ajmeeriyya", "القصيدة الأجميرية", "false", "15 Qaseeda Ajmeeriyya.pdf")'
-            // '(18,15, "Ajmeer Khwaja Madh", "تحفة المحبين في مدح سلطان الهند ", "false", "15 Ajmeer Khwaja Madh.pdf")'
-            // '(19,15, "C.M Waliyyullah TawassulBaith", "التوسل بولي الله سي يم المدووري", "false", "15 C.M Waliyyullah Tawassul Baith.pdf")'
-            // '(20,15, "Aaramba Poovaya Baith", "نشيدة الشيخ الكندوري في مدح الحبيب", "false", "15 Aaramba Poovaya Baith.pdf")'
+
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Salam Baith", "قصيدة السّلام عليك", "false", "14 sharrafal anam moulid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Sharrafal Anam Moulid", "مولد شرف الأنام", "false", "04 Luha prayer.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Manqoos Moulid", "المولد المنقوص", "false", "14 Manqoos Moulid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Barzanji Moulid", "مولد البرزنجي", "false", "14 Barzanji Moulid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Badr Moulid", "مولد بدر", "false", "14 Badr Moulid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Amladul Gusnain moulid", "مولد أملد الغصنين مختصر مولد الحسنين", "false", "14 Amladul Gusnain moulid.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,14, "Muhyidheen Moulid", "مولد محي الدين", "false", "14 Muhyidheen Moulid.pdf")');
+
+
+
+
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(1,15, "Qaseedat-ul Burda", "قصيدة البردة", "false", "15 Qaseedat-ul Burda of Imam Busweeri.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(2,15, "Qaseedat-ul Mulariyya", "القصيدة المضرية", "false", "15 Qaseedat-ul Mulariyya of Imam Busweeri.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(3,15, "Qaseedath-ul Muhammadiyya", "القصيدة المحمدية", "false", "15 Qaseedath-ul Muhammadiyya.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(4,15, "Qaseedat-ul Witriyya", "قصائد الوترية", "false", "15 Qaseedat-ul Witriyya.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(5,15, "Qaseeda Swallal Ilah", "قصيدة صلى الإله", "false", "15 Qaseeda Swallal Ilah of Sheikh.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(6,15, "Qaseeda Ahmadullahil Wali", "قصيدة  أحمد الله الولي", "false", "15 Qaseeda Ahmadullahil Wali.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(7,15, "Qaseeda Written on The Wall of Raula", "القصيدة المكتوبة في جدران الروضة", "false", "15 Qaseeda Written on The Wall.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(8,15, "Sayyidatuna Khadeeja Tawassul", "التوسل بسيدتنا خديجة الكبرى", "false", "15 Sayyidatuna Khadeeja Tawassul.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(9,15, "Sayyidatuna Fatima Tawassul", "التوسل بسيدتنا فاطمة الزهراء", "false", "15 Sayyidatuna Fatima Tawassul.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(10,15, "Sayyidatuna Mariyam Tawassul", "التوسل بسيدتنا مريم", "false", "15 Sayyidatuna Mariyam Tawassul.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(11,15, "Al-Qutbiyya", "القطبية للشيخ صدقة الله القاهري", "false", "15 Al-Qutbiyya.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(12,15, "Al-Mahlaratul Badriyya", "المحضرة البدرية", "false", "15 Al-Mahlaratul Badriyya.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(13,15, "Tha’ajeelul futhooh", "تعجيل الفتوح", "false", "15 Thaajeelul futhooh.pdf")' );
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(14,15, "Majlisunnoor", "مجلس النور", "false", "15 Majlisunnoor.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(15,15, "Al-Qaseedatul Qamriyya", "القصيدة الخمرية", "false", "15 Al-Qaseedatul khamriyya.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(16,15, "Qaseeda of Sheikh Jifri Calicut", "قصيدة دفع البلاء للشيخ الجفري الكالكوتي", "false", "15 Qaseeda of Sheikh Jifri Calicut.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(17,15, "Qaseeda Ajmeeriyya", "القصيدة الأجميرية", "false", "15 Qaseeda Ajmeeriyya.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(18,15, "Ajmeer Khwaja Madh", "تحفة المحبين في مدح سلطان الهند ", "false", "15 Ajmeer Khwaja Madh.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(19,15, "C.M Waliyyullah TawassulBaith", "التوسل بولي الله سي يم المدووري", "false", "15 C.M Waliyyullah Tawassul Baith.pdf")');
+    await txn.rawInsert(
+        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
+            '(20,15, "Aaramba Poovaya Baith", "نشيدة الشيخ الكندوري في مدح الحبيب", "false", "15 Aaramba Poovaya Baith.pdf")');
+
+
 
   });
 }
