@@ -272,17 +272,35 @@ flutter:
      - assets/pdf/13 The Swalat, whoever recites it will see the holy prophet in dream.pdf
      - assets/pdf/13 Two Swalawat of Imam Shafiee.pdf
      - assets/pdf/13 Two Swalawat that necessitate the Shafaah of the Holy Prophet.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
-#     - assets/pdf/.pdf
+     - assets/pdf/14 Amladul Gusnain moulid.pdf
+     - assets/pdf/14 Badr Moulid.pdf
+     - assets/pdf/14 Barzanji Moulid.pdf
+     - assets/pdf/14 Manqoos Moulid.pdf
+     - assets/pdf/14 Muhyidheen Moulid.pdf
+     - assets/pdf/14 Salam Baith.pdf
+     - assets/pdf/14 sharrafal anam moulid.pdf
+     - assets/pdf/15 Aaramba Poovaya Baith.pdf
+     - assets/pdf/15 Ajmeer Khwaja Madh.pdf
+     - assets/pdf/15 Al-Mahlaratul Badriyya.pdf
+     - assets/pdf/15 Al-Qaseedatul khamriyya.pdf
+     - assets/pdf/15 Al-Qutbiyya.pdf
+     - assets/pdf/15 C.M Waliyyullah Tawassul Baith.pdf
+     - assets/pdf/15 Majlisunnoor.pdf
+     - assets/pdf/15 Qaseeda Ahmadullahil Wali.pdf
+     - assets/pdf/15 Qaseeda Ajmeeriyya.pdf
+     - assets/pdf/15 Qaseeda of Sheikh Jifri Calicut.pdf
+     - assets/pdf/15 Qaseeda Swallal Ilah of Sheikh.pdf
+     - assets/pdf/15 Qaseeda Written on The Wall.pdf
+     - assets/pdf/15 Qaseedath-ul Muhammadiyya.pdf
+     - assets/pdf/15 Qaseedat-ul Burda of Imam Busweeri.pdf
+     - assets/pdf/15 Qaseedat-ul Mulariyya of Imam Busweeri.pdf
+     - assets/pdf/15 Qaseedat-ul Witriyya.pdf
+     - assets/pdf/15 Sayyidatuna Fatima Tawassul.pdf
+     - assets/pdf/15 Sayyidatuna Khadeeja Tawassul.pdf
+     - assets/pdf/15 Sayyidatuna Mariyam Tawassul.pdf
+     - assets/pdf/15 Thaajeelul futhooh.pdf
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
