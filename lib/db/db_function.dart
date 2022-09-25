@@ -36,9 +36,6 @@ Future<void> insertIntoTable() async {
           ' (2,1, "Surah Al-Imran 190-200", "آخر آيات من آل عمران", "false", "assets/pdf/01 Surah Al-Imran 190-200.pdf")');
     await txn.rawInsert(
         'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
-            '(2,1, "Surah Al-Imran 190-200", "آخر آيات من آل عمران", "false", "assets/pdf/01 Surah Al-Imran 190-200.pdf")' );
-    await txn.rawInsert(
-        'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
             '(3,1, "Tahajjud Prayer", "صلاة التهجد", "false", "assets/pdf/01 Tahajjud prayer")');
     await txn.rawInsert(
         'INSERT INTO Items(id,cat_id, title, subTitle,isFavorite, imgUrl) VALUES'
@@ -700,6 +697,8 @@ Future<void> insertIntoTable() async {
 }
 
 Future<void> getItems(int id) async {
+  print("aaaa");
+  print(id);
   itemsNotifier.value.clear();
 
   final _values =

@@ -213,7 +213,7 @@ class _home_pageState extends State<home_page> {
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 item_list_wakeup(
-                                                  id: 1,
+                                                  cat_id: 1,
                                                 )));
                                   },
                                   child: Container(
@@ -308,7 +308,7 @@ class _home_pageState extends State<home_page> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                item_list_wakeup(id: 2)));
+                                                item_list_fajr(cat_id: 2)));
                                   },
                                   child: Container(
                                     height:
@@ -333,32 +333,23 @@ class _home_pageState extends State<home_page> {
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
                                               image:
-                                                  AssetImage("assets/dikr.png"),
+                                                  AssetImage("assets/fajr1.png"),
                                               fit: BoxFit.fitHeight,
                                             ),
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 5,
+                                          height: 8,
                                         ),
                                         Container(
                                           child: Text(
-                                            "اذكار بعد كل ",
+                                            "أوراد الفجر",
                                             style: GoogleFonts.cairo(
                                                 fontSize: 13,
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ),
-                                        Container(
-                                          child: Text(
-                                            "الصلوة",
-                                            style: GoogleFonts.cairo(
-                                                fontSize: 13,
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        )
                                       ],
                                     ),
                                   ),
@@ -372,7 +363,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar After",
+                                    "Awrad of Fajr",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -385,7 +376,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "All Prayer",
+                                    "",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -410,7 +401,7 @@ class _home_pageState extends State<home_page> {
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => adkr_fajr()));
+                                            builder: (context) => item_list_allprayer(cat_id:3)));
                                   },
                                   child: Container(
                                     height:
@@ -435,17 +426,26 @@ class _home_pageState extends State<home_page> {
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
                                               image: AssetImage(
-                                                  "assets/fajr1.png"),
+                                                  "assets/dikr.png"),
                                               fit: BoxFit.fitHeight,
                                             ),
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 8,
+                                          height: 5,
                                         ),
                                         Container(
                                           child: Text(
-                                            "أوراد الفجر",
+                                            "الأَذْكَارُ بَعْدَ",
+                                            style: GoogleFonts.cairo(
+                                                fontSize: 13,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        Container(
+                                          child: Text(
+                                            "صَلَوَاتِ الْخَمْس",
                                             style: GoogleFonts.cairo(
                                                 fontSize: 13,
                                                 color: Colors.black,
@@ -465,7 +465,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Fajr",
+                                    "Azkar After",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -478,7 +478,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "   ",
+                                    "Five Prayers",
                                     style: GoogleFonts.blinker(
                                         fontSize: 14,
                                         color: Colors.black,
@@ -500,7 +500,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_dhuha(id:4)));
+                                  },
+                                child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -545,6 +552,7 @@ class _home_pageState extends State<home_page> {
                                       )
                                     ],
                                   ),
+                                )                                ,
                                 ),
                               ],
                             ),
@@ -555,7 +563,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Dhuha",
+                                    "Azkar Dhuha",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -588,7 +596,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_luhr(id:5)));
+                                  },
+                                child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -630,6 +645,7 @@ class _home_pageState extends State<home_page> {
                                     ],
                                   ),
                                 ),
+                                ),
                               ],
                             ),
                             SizedBox(
@@ -639,7 +655,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Dhuhr",
+                                    "Azkar Luhr",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -723,7 +739,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Asr",
+                                    "Azkar Asr",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -812,7 +828,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Mahrib",
+                                    "Azkar Magrib",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -989,7 +1005,7 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Adhkar Isha",
+                                    "Azkar Isha",
                                     style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         color: Colors.black,
@@ -1181,7 +1197,7 @@ class _home_pageState extends State<home_page> {
                                   children: [
                                     Container(
                                       child: Text(
-                                        "Adhkar of",
+                                        "Azkar of",
                                         style: GoogleFonts.roboto(
                                             fontSize: 16,
                                             color: Colors.black,
@@ -1459,7 +1475,7 @@ class _home_pageState extends State<home_page> {
                                                 bottom: 5),
                                             child: Container(
                                               child: Text(
-                                                "الموالد والقصائد",
+                                                "الموالد",
                                                 style: GoogleFonts.cairo(
                                                     fontSize: 10,
                                                     color: Colors.black,
@@ -1480,7 +1496,7 @@ class _home_pageState extends State<home_page> {
                                   children: [
                                     Container(
                                       child: Text(
-                                        "Moulid and",
+                                        "Moulid",
                                         style: GoogleFonts.roboto(
                                             fontSize: 16,
                                             color: Colors.black,
@@ -1493,7 +1509,7 @@ class _home_pageState extends State<home_page> {
                                   children: [
                                     Container(
                                       child: Text(
-                                        "Qaseeda",
+                                        "",
                                         style: GoogleFonts.roboto(
                                             fontSize: 16,
                                             color: Colors.black,
@@ -1550,7 +1566,7 @@ class _home_pageState extends State<home_page> {
                                                 bottom: 10, right: 5),
                                             child: Container(
                                               child: Text(
-                                                "القرآن الكريم",
+                                                "القصائد",
                                                 style: GoogleFonts.cairo(
                                                     fontSize: 12,
                                                     color: Colors.black,
@@ -1571,7 +1587,7 @@ class _home_pageState extends State<home_page> {
                                   children: [
                                     Container(
                                       child: Text(
-                                        "Quran Kareem",
+                                        "Qaseeda",
                                         style: GoogleFonts.roboto(
                                             fontSize: 16,
                                             color: Colors.black,
@@ -1584,7 +1600,7 @@ class _home_pageState extends State<home_page> {
                                   children: [
                                     Container(
                                       child: Text(
-                                        "(Full)",
+                                        "",
                                         style: GoogleFonts.roboto(
                                             fontSize: 16,
                                             color: Colors.black,
@@ -1600,576 +1616,576 @@ class _home_pageState extends State<home_page> {
                     SizedBox(
                       height: 10,
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Row(children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height:
-                                      130, //MediaQuery.of(content).size.height,
-                                  width: 90,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage("assets/shape.png"),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Container(
-                                        width: 32,
-                                        height: 36,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            image:
-                                                AssetImage("assets/spday.png"),
-                                            fit: BoxFit.fitWidth,
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 5,
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "أذكار الأيام",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "الفاضلة",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    "Special Days",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    "Adhkar",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      ]),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Row(children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height:
-                                      130, //MediaQuery.of(content).size.height,
-                                  width: 90,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage("assets/shape.png"),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Container(
-                                        width: 32,
-                                        height: 36,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            image:
-                                                AssetImage("assets/hajj.png"),
-                                            fit: BoxFit.fitHeight,
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 5,
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "اذكار الحج",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "والعمرة",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    "Hajj & Umrah",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    " ",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      ]),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Row(children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height:
-                                      130, //MediaQuery.of(content).size.height,
-                                  width: 90,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage("assets/shape.png"),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Container(
-                                        width: 32,
-                                        height: 36,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/mayyith.jpg"),
-                                            fit: BoxFit.fill,
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 5,
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "ما ينتفع",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ),
-                                      Container(
-                                        child: Text(
-                                          "للموتى",
-                                          style: GoogleFonts.cairo(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    "Which Benefits",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  child: Text(
-                                    "For Mayyith",
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      ]),
-                    ]), //6th row
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Row(children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      height:
-                                          130, //MediaQuery.of(content).size.height,
-                                      width: 90,
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage("assets/shape.png"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          SizedBox(
-                                            height: 15,
-                                          ),
-                                          Container(
-                                            width: 32,
-                                            height: 36,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage(
-                                                    "assets/travel.png"),
-                                                fit: BoxFit.fitWidth,
-                                              ),
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                bottom: 5),
-                                            child: Container(
-                                              child: Text(
-                                                "أذكار السفر",
-                                                style: GoogleFonts.cairo(
-                                                    fontSize: 13,
-                                                    color: Colors.black,
-                                                    fontWeight:
-                                                        FontWeight.bold),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "Adhkar & Dua",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "For Travelling",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ]),
-                          SizedBox(
-                            width: 20,
-                          ),
-                          Row(children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      height:
-                                          130, //MediaQuery.of(content).size.height,
-                                      width: 90,
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage("assets/shape.png"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          SizedBox(
-                                            height: 20,
-                                          ),
-                                          Container(
-                                            width: 32,
-                                            height: 36,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage(
-                                                    "assets/mahlarath.png"),
-                                                fit: BoxFit.fitHeight,
-                                              ),
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Container(
-                                            child: Text(
-                                              "المحضرة",
-                                              style: GoogleFonts.cairo(
-                                                  fontSize: 13,
-                                                  color: Colors.black,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                          ),
-                                          Container(
-                                            child: Text(
-                                              "البدرية",
-                                              style: GoogleFonts.cairo(
-                                                  fontSize: 13,
-                                                  color: Colors.black,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "Al Mahlarathul",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "badriyya",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ]),
-                          SizedBox(
-                            width: 20,
-                          ),
-                          Row(children: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      height:
-                                          130, //MediaQuery.of(content).size.height,
-                                      width: 90,
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage("assets/shape.png"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          SizedBox(
-                                            height: 20,
-                                          ),
-                                          Container(
-                                            width: 32,
-                                            height: 36,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: AssetImage(
-                                                    "assets/other.png"),
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Container(
-                                            child: Text(
-                                              "أذكار لسائر",
-                                              style: GoogleFonts.cairo(
-                                                  fontSize: 13,
-                                                  color: Colors.black,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                          ),
-                                          Container(
-                                            child: Text(
-                                              "الأوقات",
-                                              style: GoogleFonts.cairo(
-                                                  fontSize: 13,
-                                                  color: Colors.black,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "Adhkar On",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "Other Occasions",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 16,
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ]),
-                        ]), //7th row
-                    SizedBox(
-                      height: 20,
-                    ), //7th row
+                    // Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    //   Row(children: [
+                    //     Column(
+                    //       mainAxisAlignment: MainAxisAlignment.center,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               height:
+                    //                   130, //MediaQuery.of(content).size.height,
+                    //               width: 90,
+                    //               decoration: BoxDecoration(
+                    //                 image: DecorationImage(
+                    //                   image: AssetImage("assets/shape.png"),
+                    //                   fit: BoxFit.cover,
+                    //                 ),
+                    //               ),
+                    //               child: Column(
+                    //                 mainAxisAlignment: MainAxisAlignment.center,
+                    //                 children: [
+                    //                   SizedBox(
+                    //                     height: 20,
+                    //                   ),
+                    //                   Container(
+                    //                     width: 32,
+                    //                     height: 36,
+                    //                     decoration: BoxDecoration(
+                    //                       image: DecorationImage(
+                    //                         image:
+                    //                             AssetImage("assets/spday.png"),
+                    //                         fit: BoxFit.fitWidth,
+                    //                       ),
+                    //                     ),
+                    //                   ),
+                    //                   SizedBox(
+                    //                     height: 5,
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "أذكار الأيام",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "الفاضلة",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   )
+                    //                 ],
+                    //               ),
+                    //             ),
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 5,
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 "Special Days",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 "Adhkar",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         )
+                    //       ],
+                    //     ),
+                    //   ]),
+                    //   SizedBox(
+                    //     width: 30,
+                    //   ),
+                    //   Row(children: [
+                    //     Column(
+                    //       mainAxisAlignment: MainAxisAlignment.center,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               height:
+                    //                   130, //MediaQuery.of(content).size.height,
+                    //               width: 90,
+                    //               decoration: BoxDecoration(
+                    //                 image: DecorationImage(
+                    //                   image: AssetImage("assets/shape.png"),
+                    //                   fit: BoxFit.cover,
+                    //                 ),
+                    //               ),
+                    //               child: Column(
+                    //                 mainAxisAlignment: MainAxisAlignment.center,
+                    //                 children: [
+                    //                   SizedBox(
+                    //                     height: 20,
+                    //                   ),
+                    //                   Container(
+                    //                     width: 32,
+                    //                     height: 36,
+                    //                     decoration: BoxDecoration(
+                    //                       image: DecorationImage(
+                    //                         image:
+                    //                             AssetImage("assets/hajj.png"),
+                    //                         fit: BoxFit.fitHeight,
+                    //                       ),
+                    //                     ),
+                    //                   ),
+                    //                   SizedBox(
+                    //                     height: 5,
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "اذكار الحج",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "والعمرة",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   )
+                    //                 ],
+                    //               ),
+                    //             ),
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 5,
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 "Hajj & Umrah",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 " ",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         )
+                    //       ],
+                    //     ),
+                    //   ]),
+                    //   SizedBox(
+                    //     width: 30,
+                    //   ),
+                    //   Row(children: [
+                    //     Column(
+                    //       mainAxisAlignment: MainAxisAlignment.center,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               height:
+                    //                   130, //MediaQuery.of(content).size.height,
+                    //               width: 90,
+                    //               decoration: BoxDecoration(
+                    //                 image: DecorationImage(
+                    //                   image: AssetImage("assets/shape.png"),
+                    //                   fit: BoxFit.cover,
+                    //                 ),
+                    //               ),
+                    //               child: Column(
+                    //                 mainAxisAlignment: MainAxisAlignment.center,
+                    //                 children: [
+                    //                   SizedBox(
+                    //                     height: 20,
+                    //                   ),
+                    //                   Container(
+                    //                     width: 32,
+                    //                     height: 36,
+                    //                     decoration: BoxDecoration(
+                    //                       image: DecorationImage(
+                    //                         image: AssetImage(
+                    //                             "assets/mayyith.jpg"),
+                    //                         fit: BoxFit.fill,
+                    //                       ),
+                    //                     ),
+                    //                   ),
+                    //                   SizedBox(
+                    //                     height: 5,
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "ما ينتفع",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   ),
+                    //                   Container(
+                    //                     child: Text(
+                    //                       "للموتى",
+                    //                       style: GoogleFonts.cairo(
+                    //                           fontSize: 13,
+                    //                           color: Colors.black,
+                    //                           fontWeight: FontWeight.bold),
+                    //                     ),
+                    //                   )
+                    //                 ],
+                    //               ),
+                    //             ),
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 5,
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 "Which Benefits",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         ),
+                    //         Row(
+                    //           children: [
+                    //             Container(
+                    //               child: Text(
+                    //                 "For Mayyith",
+                    //                 style: GoogleFonts.roboto(
+                    //                     fontSize: 16,
+                    //                     color: Colors.black,
+                    //                     fontWeight: FontWeight.w600),
+                    //               ),
+                    //             )
+                    //           ],
+                    //         )
+                    //       ],
+                    //     ),
+                    //   ]),
+                    // ]), //6th row
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // Row(
+                    //     mainAxisAlignment: MainAxisAlignment.center,
+                    //     crossAxisAlignment: CrossAxisAlignment.center,
+                    //     children: [
+                    //       Row(children: [
+                    //         Column(
+                    //           mainAxisAlignment: MainAxisAlignment.center,
+                    //           children: [
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   height:
+                    //                       130, //MediaQuery.of(content).size.height,
+                    //                   width: 90,
+                    //                   decoration: BoxDecoration(
+                    //                     image: DecorationImage(
+                    //                       image: AssetImage("assets/shape.png"),
+                    //                       fit: BoxFit.cover,
+                    //                     ),
+                    //                   ),
+                    //                   child: Column(
+                    //                     mainAxisAlignment:
+                    //                         MainAxisAlignment.center,
+                    //                     children: [
+                    //                       SizedBox(
+                    //                         height: 15,
+                    //                       ),
+                    //                       Container(
+                    //                         width: 32,
+                    //                         height: 36,
+                    //                         decoration: BoxDecoration(
+                    //                           image: DecorationImage(
+                    //                             image: AssetImage(
+                    //                                 "assets/travel.png"),
+                    //                             fit: BoxFit.fitWidth,
+                    //                           ),
+                    //                         ),
+                    //                       ),
+                    //                       SizedBox(
+                    //                         height: 10,
+                    //                       ),
+                    //                       Padding(
+                    //                         padding: const EdgeInsets.only(
+                    //                             bottom: 5),
+                    //                         child: Container(
+                    //                           child: Text(
+                    //                             "أذكار السفر",
+                    //                             style: GoogleFonts.cairo(
+                    //                                 fontSize: 13,
+                    //                                 color: Colors.black,
+                    //                                 fontWeight:
+                    //                                     FontWeight.bold),
+                    //                           ),
+                    //                         ),
+                    //                       ),
+                    //                     ],
+                    //                   ),
+                    //                 ),
+                    //               ],
+                    //             ),
+                    //             SizedBox(
+                    //               height: 5,
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "Adhkar & Dua",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "For Travelling",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             )
+                    //           ],
+                    //         ),
+                    //       ]),
+                    //       SizedBox(
+                    //         width: 20,
+                    //       ),
+                    //       Row(children: [
+                    //         Column(
+                    //           mainAxisAlignment: MainAxisAlignment.center,
+                    //           children: [
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   height:
+                    //                       130, //MediaQuery.of(content).size.height,
+                    //                   width: 90,
+                    //                   decoration: BoxDecoration(
+                    //                     image: DecorationImage(
+                    //                       image: AssetImage("assets/shape.png"),
+                    //                       fit: BoxFit.cover,
+                    //                     ),
+                    //                   ),
+                    //                   child: Column(
+                    //                     mainAxisAlignment:
+                    //                         MainAxisAlignment.center,
+                    //                     children: [
+                    //                       SizedBox(
+                    //                         height: 20,
+                    //                       ),
+                    //                       Container(
+                    //                         width: 32,
+                    //                         height: 36,
+                    //                         decoration: BoxDecoration(
+                    //                           image: DecorationImage(
+                    //                             image: AssetImage(
+                    //                                 "assets/mahlarath.png"),
+                    //                             fit: BoxFit.fitHeight,
+                    //                           ),
+                    //                         ),
+                    //                       ),
+                    //                       SizedBox(
+                    //                         height: 5,
+                    //                       ),
+                    //                       Container(
+                    //                         child: Text(
+                    //                           "المحضرة",
+                    //                           style: GoogleFonts.cairo(
+                    //                               fontSize: 13,
+                    //                               color: Colors.black,
+                    //                               fontWeight: FontWeight.bold),
+                    //                         ),
+                    //                       ),
+                    //                       Container(
+                    //                         child: Text(
+                    //                           "البدرية",
+                    //                           style: GoogleFonts.cairo(
+                    //                               fontSize: 13,
+                    //                               color: Colors.black,
+                    //                               fontWeight: FontWeight.bold),
+                    //                         ),
+                    //                       )
+                    //                     ],
+                    //                   ),
+                    //                 ),
+                    //               ],
+                    //             ),
+                    //             SizedBox(
+                    //               height: 5,
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "Al Mahlarathul",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "badriyya",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             )
+                    //           ],
+                    //         ),
+                    //       ]),
+                    //       SizedBox(
+                    //         width: 20,
+                    //       ),
+                    //       Row(children: [
+                    //         Column(
+                    //           mainAxisAlignment: MainAxisAlignment.center,
+                    //           children: [
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   height:
+                    //                       130, //MediaQuery.of(content).size.height,
+                    //                   width: 90,
+                    //                   decoration: BoxDecoration(
+                    //                     image: DecorationImage(
+                    //                       image: AssetImage("assets/shape.png"),
+                    //                       fit: BoxFit.cover,
+                    //                     ),
+                    //                   ),
+                    //                   child: Column(
+                    //                     mainAxisAlignment:
+                    //                         MainAxisAlignment.center,
+                    //                     children: [
+                    //                       SizedBox(
+                    //                         height: 20,
+                    //                       ),
+                    //                       Container(
+                    //                         width: 32,
+                    //                         height: 36,
+                    //                         decoration: BoxDecoration(
+                    //                           image: DecorationImage(
+                    //                             image: AssetImage(
+                    //                                 "assets/other.png"),
+                    //                             fit: BoxFit.cover,
+                    //                           ),
+                    //                         ),
+                    //                       ),
+                    //                       SizedBox(
+                    //                         height: 5,
+                    //                       ),
+                    //                       Container(
+                    //                         child: Text(
+                    //                           "أذكار لسائر",
+                    //                           style: GoogleFonts.cairo(
+                    //                               fontSize: 13,
+                    //                               color: Colors.black,
+                    //                               fontWeight: FontWeight.bold),
+                    //                         ),
+                    //                       ),
+                    //                       Container(
+                    //                         child: Text(
+                    //                           "الأوقات",
+                    //                           style: GoogleFonts.cairo(
+                    //                               fontSize: 13,
+                    //                               color: Colors.black,
+                    //                               fontWeight: FontWeight.bold),
+                    //                         ),
+                    //                       )
+                    //                     ],
+                    //                   ),
+                    //                 ),
+                    //               ],
+                    //             ),
+                    //             SizedBox(
+                    //               height: 5,
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "Adhkar On",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             ),
+                    //             Row(
+                    //               children: [
+                    //                 Container(
+                    //                   child: Text(
+                    //                     "Other Occasions",
+                    //                     style: GoogleFonts.roboto(
+                    //                         fontSize: 16,
+                    //                         color: Colors.black,
+                    //                         fontWeight: FontWeight.w600),
+                    //                   ),
+                    //                 )
+                    //               ],
+                    //             )
+                    //           ],
+                    //         ),
+                    //       ]),
+                    //     ]), //7th row
+                    // SizedBox(
+                    //   height: 20,
+                    // ), //7th row
                   ]),
             ],
           )),
