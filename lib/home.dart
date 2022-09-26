@@ -308,7 +308,7 @@ class _home_pageState extends State<home_page> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                item_list_fajr(cat_id: 2)));
+                                                item_list_wakeup(cat_id: 2)));
                                   },
                                   child: Container(
                                     height:
@@ -401,7 +401,7 @@ class _home_pageState extends State<home_page> {
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => item_list_allprayer(cat_id:3)));
+                                            builder: (context) => item_list_wakeup(cat_id:3)));
                                   },
                                   child: Container(
                                     height:
@@ -505,7 +505,7 @@ class _home_pageState extends State<home_page> {
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => item_list_dhuha(id:4)));
+                                            builder: (context) => item_list_wakeup(cat_id:4)));
                                   },
                                 child:Container(
                                   height:
@@ -601,7 +601,7 @@ class _home_pageState extends State<home_page> {
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => item_list_luhr(id:5)));
+                                            builder: (context) => item_list_wakeup(cat_id:5)));
                                   },
                                 child:Container(
                                   height:
@@ -688,7 +688,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_wakeup(cat_id:6)));
+                                  },
+                                child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -730,6 +737,7 @@ class _home_pageState extends State<home_page> {
                                     ],
                                   ),
                                 ),
+                              ),
                               ],
                             ),
                             SizedBox(
@@ -773,7 +781,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_wakeup(cat_id:7)));
+                                  },
+                                child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -819,6 +834,7 @@ class _home_pageState extends State<home_page> {
                                     ],
                                   ),
                                 ),
+                                ),
                               ],
                             ),
                             SizedBox(
@@ -861,7 +877,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_wakeup(cat_id:8)));
+                                  },
+                                child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -912,6 +935,7 @@ class _home_pageState extends State<home_page> {
                                     ],
                                   ),
                                 ),
+                                ),
                               ],
                             ),
                             SizedBox(
@@ -954,7 +978,14 @@ class _home_pageState extends State<home_page> {
                           children: [
                             Row(
                               children: [
-                                Container(
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => item_list_wakeup(cat_id:9)));
+                                  },
+                                  child:Container(
                                   height:
                                       130, //MediaQuery.of(content).size.height,
                                   width: 90,
@@ -995,6 +1026,7 @@ class _home_pageState extends State<home_page> {
                                       )
                                     ],
                                   ),
+                                ),
                                 ),
                               ],
                             ),
@@ -1041,7 +1073,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
-                                    Container(
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:10)));
+                                      },
+                                      child: Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
                                       width: 90,
@@ -1093,6 +1132,7 @@ class _home_pageState extends State<home_page> {
                                         ],
                                       ),
                                     ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -1136,7 +1176,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
-                                    Container(
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:11)));
+                                      },
+                                      child: Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
                                       width: 90,
@@ -1188,6 +1235,7 @@ class _home_pageState extends State<home_page> {
                                         ],
                                       ),
                                     ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -1231,7 +1279,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
-                                    Container(
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:12)));
+                                      },
+                                      child: Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
                                       width: 90,
@@ -1283,6 +1338,7 @@ class _home_pageState extends State<home_page> {
                                         ],
                                       ),
                                     ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -1331,6 +1387,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:13)));
+                                      },
+                                      child:
                                     Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
@@ -1393,6 +1457,7 @@ class _home_pageState extends State<home_page> {
                                         ],
                                       ),
                                     ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -1439,6 +1504,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:14)));
+                                      },
+                                      child:
                                     Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
@@ -1487,6 +1560,7 @@ class _home_pageState extends State<home_page> {
                                         ],
                                       ),
                                     ),
+                                    ),
                                   ],
                                 ),
                                 SizedBox(
@@ -1530,6 +1604,14 @@ class _home_pageState extends State<home_page> {
                               children: [
                                 Row(
                                   children: [
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => item_list_wakeup(cat_id:15)));
+                                      },
+                                      child:
                                     Container(
                                       height:
                                           130, //MediaQuery.of(content).size.height,
@@ -1577,6 +1659,7 @@ class _home_pageState extends State<home_page> {
                                           ),
                                         ],
                                       ),
+                                    ),
                                     ),
                                   ],
                                 ),
