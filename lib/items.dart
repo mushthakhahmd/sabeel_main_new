@@ -4,7 +4,7 @@ import 'package:sabeel/db/db_function.dart';
 import 'package:sabeel/home.dart';
 import 'package:favorite_button/favorite_button.dart';
 import 'package:sabeel/model/item_model.dart';
-
+import 'package:sabeel/views/pdf_view.dart';
 
 class item_list_wakeup extends StatefulWidget {
   final int cat_id;
@@ -28,8 +28,6 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey.shade200,
-
-
         body: Column(
           children: [
             Padding(
@@ -49,9 +47,9 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => home_page()));
+                                builder: (context) => const home_page()));
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios,
                         color: Color(0xff1D438A),
                         size: 24,
@@ -59,7 +57,7 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             SpaceBar(),
@@ -74,15 +72,16 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                       itemBuilder: (itemBuilder, index) {
                         final item = itemsNotifier.value[index];
                         return InkWell(
-                          onTap: (){
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute<dynamic>(
-                            //     builder: (_) => PDFViewerFromAsset(
-                            //       pdfAssetPath: 'assets/pdf/file-example.pdf',
-                            //     ),
-                            //   ),
-                            // );
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute<dynamic>(
+                                builder: (_) => PdfViewPage(
+                                  path: item.imgUrl,
+                                  pageHeader: item.title,
+                                ),
+                              ),
+                            );
                           },
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
@@ -97,12 +96,12 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                                     child: Image.asset("list.png")),
                                 title: Text(
                                   item.title,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Colors.black, fontSize: 16),
                                 ),
                                 subtitle: Text(
                                   item.subTitle,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Colors.black87, fontSize: 16),
                                 ),
                                 trailing: Padding(
@@ -115,8 +114,8 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.grey
-                                              .withOpacity(0.5), //color of shadow
+                                          color: Colors.grey.withOpacity(
+                                              0.5), //color of shadow
                                           spreadRadius:
                                               0.5, //spread radius// blur radius
                                           // changes position of shadow
@@ -149,4 +148,3 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
     );
   }
 }
-

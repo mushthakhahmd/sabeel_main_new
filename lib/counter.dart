@@ -11,7 +11,7 @@ class _counterState extends State<counter> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
-      body: Center(
+      body: const Center(
 
       ),
     );

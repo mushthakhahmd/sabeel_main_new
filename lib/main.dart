@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:sabeel/home.dart';
 import 'package:sabeel/db/db_function.dart';
-import 'package:sabeel/splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDatabase();
 
   getCount();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

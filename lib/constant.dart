@@ -8,14 +8,14 @@ Widget SpaceBar() {
       height: 26,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12), color: Colors.white),
-      child: Center(
+      child: const Center(
         child: TextField(
           textAlign: TextAlign.left,
           cursorColor: Colors.black45,
           decoration: InputDecoration(
             focusColor: Colors.blue,
             prefixIcon: Padding(
-              padding: const EdgeInsets.only(top: 3),
+              padding: EdgeInsets.only(top: 3),
               child: Icon(
                 Icons.search,
                 color: Colors.black45,

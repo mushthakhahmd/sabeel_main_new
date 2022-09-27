@@ -33,6 +33,7 @@ dependencies:
   carousel_slider: ^4.1.1
   salomon_bottom_bar: ^3.3.1
   flutter_slider_drawer: ^2.1.1
+  easy_pdf_viewer: ^1.0.4
   favorite_button: ^0.0.4
   cupertino_icons: ^1.0.2
 

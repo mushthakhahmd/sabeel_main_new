@@ -15,13 +15,14 @@ class _splashState extends State<splash> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 5),(){
+    Timer(const Duration(seconds: 5),(){
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (BuildContext context)=> home_page()));
+          MaterialPageRoute(builder: (BuildContext context)=> const home_page()));
 
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
@@ -35,7 +36,7 @@ class _splashState extends State<splash> {
                 Container(
                   height: 390,
                   width: 320,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/nale.gif"),
                       fit: BoxFit.fill,
@@ -44,7 +45,7 @@ class _splashState extends State<splash> {
                 ),
               ],
             ),
-            SizedBox(height: 30,),
+            const SizedBox(height: 30,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
