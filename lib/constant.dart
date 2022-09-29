@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 Widget SpaceBar() {
   return Padding(
-    padding: const EdgeInsets.only(left: 20, right: 20, bottom: 10),
+    padding: const EdgeInsets.only(left:20, right: 20, bottom: 10,),
     child: Container(
       width: double.infinity,
-      height: 26,
+      height: 40,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12), color: Colors.white),
       child: const Center(
@@ -14,17 +14,15 @@ Widget SpaceBar() {
           cursorColor: Colors.black45,
           decoration: InputDecoration(
             focusColor: Colors.blue,
-            prefixIcon: Padding(
-              padding: EdgeInsets.only(top: 3),
-              child: Icon(
-                Icons.search,
-                color: Colors.black45,
-                size: 16,
-              ),
+            prefixIcon: Icon(
+              Icons.search,
+              color: Colors.black45,
+              size: 24,
             ),
             hintText: "Search by Title",
-            hintStyle: TextStyle(color: Colors.black45, fontSize: 12),
+            hintStyle: TextStyle(color: Colors.black45, fontSize: 18),
             border: InputBorder.none,
+
           ),
         ),
       ),

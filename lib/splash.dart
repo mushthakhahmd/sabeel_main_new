@@ -25,47 +25,14 @@ class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 390,
-                  width: 320,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/nale.gif"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ],
+        child: Container(
+            constraints: BoxConstraints.expand(),
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                     image: AssetImage("assets/cover.jpg"),
+                    fit: BoxFit.cover)
             ),
-            const SizedBox(height: 30,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Container(
-                //   height: 240,
-                //   width: 360,
-                //   decoration: BoxDecoration(
-                //     image: DecorationImage(
-                //       image: AssetImage("assets/name.png"),
-                //       fit: BoxFit.fill,
-                //     ),
-                //   ),
-                // ),
-                Text("Sabeel_ul Falah", style: GoogleFonts.abel(
-                    fontSize: 36,
-                    color: Colors.black54,
-                    fontWeight: FontWeight.normal),),
-              ],
-            )
-          ],
         ),
       ),
     );

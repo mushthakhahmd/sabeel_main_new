@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sabeel/home.dart';
 import 'package:sabeel/db/db_function.dart';
+import 'package:sabeel/splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const home_page(),
+      home: const splash(),
     );
   }
 }

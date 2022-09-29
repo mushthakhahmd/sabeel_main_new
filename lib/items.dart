@@ -34,26 +34,29 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
               padding: const EdgeInsets.only(
                 right: 330,
               ),
-              child: Container(
-                height: 36,
-                width: 36,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: Colors.white),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 3),
-                  child: IconButton(
-                      onPressed: () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const home_page()));
-                      },
-                      icon: const Icon(
-                        Icons.arrow_back_ios,
-                        color: Color(0xff1D438A),
-                        size: 24,
-                      )),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10,top: 20),
+                child: Container(
+                  height: 36,
+                  width: 36,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(60),
+                      color: Colors.white),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 3),
+                    child: IconButton(
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const home_page()));
+                        },
+                        icon: const Icon(
+                          Icons.arrow_back_ios,
+                          color: Color(0xff1D438A),
+                          size: 24,
+                        )),
+                  ),
                 ),
               ),
             ),
