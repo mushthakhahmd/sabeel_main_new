@@ -3,6 +3,8 @@ import 'package:sabeel/model/item_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 ValueNotifier<List<Items>> itemsNotifier = ValueNotifier([]);
+
+List<Items> searchItemsNotifier = [];
 late Database _db;
 
 Future<void> initializeDatabase() async {
@@ -658,23 +660,38 @@ Future<void> insertIntoTable() async {
 }
 
 Future<void> getItems(int id) async {
-  print("aaaa");
-  print(id);
   itemsNotifier.value.clear();
 
-  final _values =
-      await _db.rawQuery(' SELECT * FROM Items  WHERE cat_id = ?', [id]);
+  if (id == -1) {
+    final _values = await _db.rawQuery(' SELECT * FROM Items ');
+    for (var item in _values) {
+      final items = Items.fromJson(item);
+      itemsNotifier.value.add(items);
+      itemsNotifier.notifyListeners();
+      searchItemsNotifier.add(items);
+    }
+  } else {
+    final _values =
+        await _db.rawQuery(' SELECT * FROM Items  WHERE cat_id = ?', [id]);
+    for (var item in _values) {
+      final items = Items.fromJson(item);
+      itemsNotifier.value.add(items);
+      itemsNotifier.notifyListeners();
+      searchItemsNotifier.add(items);
+    }
+  }
+}
 
-  print(_values);
-
-  for (var item in _values) {
-    //final  Items.fromJson(item);
-    final items = Items.fromJson(item);
-
-    itemsNotifier.value.add(items);
+void search2(String value) {
+  itemsNotifier.value.clear();
+  if (value.isEmpty) {
+    itemsNotifier.value.addAll(searchItemsNotifier);
+  } else {
+    itemsNotifier.value = searchItemsNotifier
+        .where((element) =>
+            element.title.toLowerCase().contains(value.toLowerCase()))
+        .toList();
     itemsNotifier.notifyListeners();
-
-    print(itemsNotifier.value);
   }
 }
 
@@ -697,7 +714,7 @@ Future<void> getFavItems() async {
 }
 
 Future<void> updateFavorite(int id, String value) async {
-  final _values = await _db.rawQuery(
+  await _db.rawQuery(
       ' UPDATE Items SET  isFavorite =?  WHERE   id = ?', [value, id]);
 
   if (value == 'false') {

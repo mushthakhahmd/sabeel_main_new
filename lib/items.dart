@@ -17,7 +17,6 @@ class item_list_wakeup extends StatefulWidget {
 class _item_list_wakeupState extends State<item_list_wakeup> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     getItems(widget.cat_id);
@@ -35,7 +34,7 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                 right: 330,
               ),
               child: Padding(
-                padding: const EdgeInsets.only(left: 10,top: 20),
+                padding: const EdgeInsets.only(left: 10, top: 20),
                 child: Container(
                   height: 36,
                   width: 36,
@@ -46,7 +45,7 @@ class _item_list_wakeupState extends State<item_list_wakeup> {
                     padding: const EdgeInsets.only(left: 3),
                     child: IconButton(
                         onPressed: () {
-                          Navigator.pushReplacement(
+                          Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => const home_page()));

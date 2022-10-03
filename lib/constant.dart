@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:sabeel/db/db_function.dart';
 
 Widget SpaceBar() {
   return Padding(
-    padding: const EdgeInsets.only(left:20, right: 20, bottom: 10,),
+    padding: const EdgeInsets.only(
+      left: 20,
+      right: 20,
+      bottom: 10,
+    ),
     child: Container(
       width: double.infinity,
       height: 40,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12), color: Colors.white),
-      child: const Center(
+      child: Center(
         child: TextField(
           textAlign: TextAlign.left,
+          onChanged: (String? value) {
+            if (value == null) return;
+            search2(value);
+          },
           cursorColor: Colors.black45,
           decoration: InputDecoration(
             focusColor: Colors.blue,
@@ -22,7 +31,6 @@ Widget SpaceBar() {
             hintText: "Search by Title",
             hintStyle: TextStyle(color: Colors.black45, fontSize: 18),
             border: InputBorder.none,
-
           ),
         ),
       ),
