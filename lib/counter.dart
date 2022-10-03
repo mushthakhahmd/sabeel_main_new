@@ -83,7 +83,6 @@ class _counterState extends State<CounterView> {
             ),
             Positioned(
               bottom: 50,
-              left: 120,
               child: GestureDetector(
                 onTap: () {
                   _incrementCounter();
